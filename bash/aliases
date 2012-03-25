@@ -1,9 +1,11 @@
 alias g=git
 alias ga='git add'
+alias gai='git add -i'
 alias gs='git status'
 alias gp='git push'
 alias gco='git checkout'
 alias grb='git rebase'
+alias grbi='git rebase -i'
 alias gcf='git cfg'
 alias gc='git commit'
 alias gca='git commit --amend'
