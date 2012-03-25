@@ -1,5 +1,5 @@
 alias g=git
-alias gadd='git add'
+alias ga='git add'
 alias gs='git status'
 alias gp='git push'
 alias gco='git checkout'
