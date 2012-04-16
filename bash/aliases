@@ -1,11 +1,13 @@
 alias g=git
 alias ga='git add'
 alias gai='git add -i'
+alias gap='git add -p'
 alias gb='git branch'
 alias gbd='git branch -D'
 alias gc='git commit'
 alias gca='git commit --amend'
 alias gcf='git cfg'
+alias gcl='git clean -fd'
 alias gco='git checkout'
 alias gcob='git checkout -b'
 alias gd='git diff'
