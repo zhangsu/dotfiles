@@ -7,6 +7,8 @@
     ui = auto
 [core]
     editor = vim
+[push]
+    default = upstream
 [github]
     user = <%= print("GitHub Username: "); STDOUT.flush; STDIN.gets.chomp %>
     token = <%= print("GitHub API Token: "); STDOUT.flush; STDIN.gets.chomp %>
