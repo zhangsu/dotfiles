@@ -1,4 +1,5 @@
 syntax on
+filetype plugin indent on
 
 set t_Co=256
 let g:CSApprox_attr_map = { 'bold' : 'bold', 'italic' : '', 'sp' : '' }
@@ -19,3 +20,5 @@ au Syntax * syn match Tabs /\t\+/
 set colorcolumn=80
 
 set guifont=Inconsolata\ 12
+
+set sw=2 ts=2 expandtab
