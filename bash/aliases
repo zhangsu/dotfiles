@@ -1,3 +1,6 @@
+alias b='bundle'
+alias be='bundle exec'
+alias bu='bundle update'
 alias g=git
 alias ga='git add'
 alias gai='git add -i'
