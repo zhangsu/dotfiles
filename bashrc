@@ -9,8 +9,8 @@
 # ... or force ignoredups and ignorespace
 HISTCONTROL=ignoredups:ignorespace
 
-PATH=$PATH:$HOME/.gem/ruby/1.9.1/bin
-export PATH
+export PATH=$PATH:$HOME/.gem/ruby/1.9.1/bin
+export GEM_HOME="~/.gem/ruby/1.9.1"
 
 # append to the history file, don't overwrite it
 shopt -s histappend
