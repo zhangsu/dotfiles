@@ -24,3 +24,5 @@ set guifont=Inconsolata\ 12
 set sw=2 ts=2 expandtab
 
 set clipboard=unnamedplus
+
+call pathogen#infect()
