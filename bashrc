@@ -9,7 +9,7 @@
 # ... or force ignoredups and ignorespace
 HISTCONTROL=ignoredups:ignorespace
 
-export PATH=$PATH:$HOME/.gem/ruby/1.9.1/bin
+export PATH=$PATH:/usr/local/heroku/bin:$HOME/.gem/ruby/1.9.1/bin
 export GEM_HOME="~/.gem/ruby/1.9.1"
 
 # append to the history file, don't overwrite it
@@ -102,3 +102,4 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 
 eval $(keychain --eval --agents ssh -Q --quiet id_rsa)
+
