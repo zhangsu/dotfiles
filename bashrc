@@ -9,8 +9,8 @@
 # ... or force ignoredups and ignorespace
 HISTCONTROL=ignoredups:ignorespace
 
-export PATH=$PATH:/usr/local/heroku/bin:$HOME/.gem/ruby/1.9.1/bin
-export GEM_HOME="~/.gem/ruby/1.9.1"
+export PATH=$PATH:/usr/local/heroku/bin:$HOME/.gem/ruby/2.0.0/bin
+export GEM_HOME="~/.gem/ruby/2.0.0"
 
 # append to the history file, don't overwrite it
 shopt -s histappend
