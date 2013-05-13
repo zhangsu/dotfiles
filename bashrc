@@ -101,5 +101,6 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-eval $(keychain --eval --agents ssh -Q --quiet id_rsa)
-
+if [ ! -z `command -v keychain`]; then
+    eval $(keychain --eval --agents ssh -Q --quiet id_rsa)
+fi
