@@ -22,6 +22,7 @@ set colorcolumn=80
 set guifont=Inconsolata\ 12
 
 set sw=2 ts=2 expandtab
+set nowrap
 
 set clipboard=unnamedplus
 
