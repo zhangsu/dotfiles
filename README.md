@@ -4,6 +4,6 @@ Foo.
 
 ## Installation
 
-    git clone git://github.com/zhangsu/dotfiles.git ~/proj/dotfiles
-    cd ~/proj/dotfiles
+    git clone --recursive git://github.com/zhangsu/dotfiles.git
+    cd dotfiles
     rake
