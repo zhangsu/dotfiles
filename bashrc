@@ -49,6 +49,9 @@ if [ -f ~/.git/completion.bash ]; then
     . ~/.git/completion.bash
 fi
 
-if [ ! -z `command -v keychain` ] ; then
+# Use an existing SSH agent.
+if [ ! -z `command -v ssh-add` ] ; then
+    eval $(ssh-add)
+elif [ ! -z `command -v keychain` ] ; then
     eval $(keychain --eval --agents ssh -Q --quiet id_rsa)
 fi
