@@ -6,7 +6,6 @@ __git_complete gau _git_add
 __git_complete gb _git_branch
 __git_complete gba _git_branch
 __git_complete gbd _git_branch
-__git_complete gbl _git_blame
 __git_complete gbr _git_branch
 __git_complete gc _git_commit
 __git_complete gca _git_commit
