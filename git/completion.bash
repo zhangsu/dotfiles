@@ -14,7 +14,7 @@ __git_complete gcl _git_clean
 __git_complete gco _git_checkout
 __git_complete gcob _git_checkout
 __git_complete gcop _git_checkout
-__git_complete gcp _git_cherry-pick
+__git_complete gcp _git_cherry_pick
 __git_complete gd _git_diff
 __git_complete gdc _git_diff
 __git_complete gds _git_diff
