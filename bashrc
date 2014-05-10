@@ -7,9 +7,6 @@
 
 PS1='[\u@\h \W]\$ '
 
-export PATH=$PATH:/usr/local/heroku/bin:$HOME/.gem/ruby/2.0.0/bin
-export GEM_HOME="~/.gem/ruby/2.0.0"
-
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
@@ -48,3 +45,6 @@ fi
 if [ -f ~/.git/completion.bash ]; then
     . ~/.git/completion.bash
 fi
+
+export PATH=$PATH:/usr/local/heroku/bin
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
