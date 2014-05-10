@@ -1,7 +1,17 @@
 require 'rake'
 require 'erb'
 
-task :default => [:install]
+task :default => [:install_rvm, :install]
+
+desc "install Ruby Version Manager"
+task :install_rvm do
+  if File.exist?(File.join(Dir.home, ".rvm"))
+    puts ".rvm found under #{Dir.home}, skipping installing RVM"
+  else
+    puts "Installing RVM"
+    system '\curl -sSL https://get.rvm.io | bash -s stable'
+  end
+end
 
 desc "install the dot files into user's home directory"
 task :install do
