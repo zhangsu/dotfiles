@@ -14,3 +14,7 @@
 	path = vim/bundle/greplace.vim
 	url = git@github.com:vim-scripts/greplace.vim.git
 	branch = master
+[submodule "rbenv"]
+	path = rbenv
+	url = git@github.com:sstephenson/rbenv.git
+	branch = master

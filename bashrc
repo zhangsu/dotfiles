@@ -45,4 +45,5 @@ if [ -f ~/.git/completion.bash ]; then
 fi
 
 export PATH=$PATH:/usr/local/heroku/bin
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export PATH=$HOME/.rbenv/bin:$PATH
+eval "$(rbenv init -)"
