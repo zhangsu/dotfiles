@@ -7,6 +7,7 @@ Foo.
     git clone --recursive git://github.com/zhangsu/dotfiles.git
     cd dotfiles
     rake
+    rake install_ruby_build # optional for rbenv
 
 ## Update submodules
 

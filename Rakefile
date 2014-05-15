@@ -35,6 +35,11 @@ task :install do
   end
 end
 
+desc "install ruby-build plugin for rbenv"
+task :install_ruby_build do
+  `git clone git@github.com:sstephenson/ruby-build rbenv/plugins/ruby-build`
+end
+
 def replace_file(install_path, filename)
   system "rm -rf '#{install_path}'"
   install_file(install_path, filename)
