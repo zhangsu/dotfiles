@@ -46,4 +46,4 @@ fi
 
 export PATH=$PATH:/usr/local/heroku/bin
 export PATH=$HOME/.rbenv/bin:$PATH
-eval "$(rbenv init -)"
+eval "$(rbenv init - --no-rehash)"
