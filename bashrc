@@ -39,7 +39,7 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 
 # Auto completion for Git command aliases.
-. /usr/share/git/completion/git-completion.bash
+. ~/.git/git-completion.bash
 if [ -f ~/.git/completion.bash ]; then
     . ~/.git/completion.bash
 fi
