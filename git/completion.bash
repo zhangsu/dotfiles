@@ -43,6 +43,7 @@ __git_complete gsmu _git_submodule
 __git_complete gst _git_stash
 __git_complete gstc _git_stash
 __git_complete gstd _git_stash
+__git_complete gstk _git_stash
 __git_complete gstl _git_stash
 __git_complete gstp _git_stash
 __git_complete gsts _git_stash
