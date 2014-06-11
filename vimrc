@@ -3,7 +3,7 @@ filetype plugin indent on
 
 set t_Co=256
 let g:CSApprox_attr_map = { 'bold' : 'bold', 'italic' : '', 'sp' : '' }
-colo railscasts
+colorscheme railscasts
 
 set hlsearch
 " Press Space to turn off highlighting and clear any message already
