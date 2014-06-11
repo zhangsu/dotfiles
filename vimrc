@@ -10,13 +10,13 @@ set hlsearch
 " displayed.
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
-hi ExtraWhitespace ctermbg=Red guibg=Red
-hi Tabs ctermbg=Blue guibg=Blue
-hi ColorColumn ctermbg=Red guibg=#212121
+highlight ExtraWhitespace ctermbg=Red guibg=Red
+highlight Tabs ctermbg=Blue guibg=Blue
 
-au Syntax * syn match ExtraWhitespace /\s\+$/
-au Syntax * syn match Tabs /\t\+/
+autocmd BufWinEnter * call matchadd('ExtraWhitespace', '\s\+$', -1)
+autocmd BufWinEnter * call matchadd('Tabs', '\t\+', -1)
 
+highlight ColorColumn ctermbg=Red guibg=#212121
 set colorcolumn=80
 
 set guifont=Inconsolata\ 12
