@@ -10,6 +10,10 @@
 	path = vim/bundle/vim-slim
 	url = git@github.com:slim-template/vim-slim.git
 	branch = master
+[submodule "vim/bundle/vim-jade"]
+	path = vim/bundle/vim-jade
+	url = git@github.com:digitaltoad/vim-jade.git
+	branch = master
 [submodule "vim/bundle/greplace.vim"]
 	path = vim/bundle/greplace.vim
 	url = git@github.com:vim-scripts/greplace.vim.git
