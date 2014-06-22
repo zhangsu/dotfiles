@@ -40,6 +40,7 @@ __git_complete grh _git_reset
 __git_complete grm _git_rm
 __git_complete grmt _git_remote
 __git_complete gsh _git_show
+__git_complete gsm _git_submodule
 __git_complete gsmu _git_submodule
 __git_complete gst _git_stash
 __git_complete gstc _git_stash
