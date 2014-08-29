@@ -19,7 +19,7 @@ autocmd BufWinEnter * call matchadd('Tabs', '\t\+', -1)
 highlight ColorColumn ctermbg=Red guibg=#212121
 set colorcolumn=80,120
 
-set guifont=Inconsolata\ 12
+set guifont=Source\ Code\ Pro\ 10
 
 set sw=2 ts=2 expandtab
 set nowrap
