@@ -25,3 +25,6 @@
 [submodule "vim/bundle/vim-stylus"]
 	path = vim/bundle/vim-stylus
 	url = git@github.com:wavded/vim-stylus.git
+[submodule "vim/bundle/vim-glsl"]
+	path = vim/bundle/vim-glsl
+	url = git@github.com:tikhomirov/vim-glsl.git
