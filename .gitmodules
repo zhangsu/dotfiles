@@ -1,7 +1,3 @@
-[submodule "vim/bundle/go-vim"]
-	path = vim/bundle/go-vim
-	url = git@github.com:uggedal/go-vim.git
-	branch = master
 [submodule "vim/bundle/vim-coffee-script"]
 	path = vim/bundle/vim-coffee-script
 	url = git@github.com:kchmck/vim-coffee-script.git
@@ -28,3 +24,6 @@
 [submodule "vim/bundle/vim-glsl"]
 	path = vim/bundle/vim-glsl
 	url = git@github.com:tikhomirov/vim-glsl.git
+[submodule "vim/bundle/vim-go"]
+	path = vim/bundle/vim-go
+	url = git@github.com:fatih/vim-go
