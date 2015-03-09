@@ -16,7 +16,7 @@ highlight Tabs ctermbg=Blue guibg=Blue
 autocmd BufWinEnter * call matchadd('ExtraWhitespace', '\s\+$', -1)
 autocmd BufWinEnter * call matchadd('Tabs', '\t\+', -1)
 
-highlight ColorColumn ctermbg=Red guibg=#212121
+highlight ColorColumn ctermbg=233 guibg=#212121
 set colorcolumn=80,120
 
 set guifont=Source\ Code\ Pro\ 10
