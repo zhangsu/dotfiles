@@ -20,6 +20,7 @@ __git_complete gd _git_diff
 __git_complete gdc _git_diff
 __git_complete gds _git_diff
 __git_complete gdt _git_difftool
+__git_complete gdw _git_diff
 __git_complete gf _git_fetch
 __git_complete gh _git_help
 __git_complete gl _git_log
