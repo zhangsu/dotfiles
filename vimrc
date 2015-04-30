@@ -12,6 +12,7 @@ nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
 highlight ExtraWhitespace ctermbg=Red guibg=Red
 highlight Tabs ctermbg=Blue guibg=Blue
+highlight Pmenu ctermfg=Black ctermbg=White guifg=#000 guibg=#fff
 
 autocmd BufWinEnter * call matchadd('ExtraWhitespace', '\s\+$', -1)
 autocmd BufWinEnter * call matchadd('Tabs', '\t\+', -1)
