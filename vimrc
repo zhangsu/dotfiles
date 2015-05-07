@@ -35,6 +35,13 @@ set guifont=Source\ Code\ Pro\ 10
 set sw=2 ts=2 expandtab
 set nowrap
 
-set clipboard=unnamedplus
+if has("unix")
+  let s:uname = system("uname -s")
+  if s:uname =~ "Darwin"
+    set clipboard=unnamed
+  else
+    set clipboard=unnamedplus
+  endif
+endif
 
 call pathogen#infect()
