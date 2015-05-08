@@ -3,7 +3,6 @@ filetype plugin indent on
 
 set t_Co=256
 let g:ycm_confirm_extra_conf = 0
-let g:CSApprox_attr_map = { 'bold' : 'bold', 'italic' : '', 'sp' : '' }
 let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
       \ --ignore .git
       \ --ignore .svn
