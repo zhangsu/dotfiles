@@ -34,8 +34,19 @@ let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
       \ --ignore review
       \ -g ""'
 let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
-colorscheme railscasts
 
+set colorcolumn=81,101,121
+set guifont=Source\ Code\ Pro\ 10
+set sw=2 ts=2 expandtab
+set nowrap
+if has("unix")
+  let s:uname = system("uname -s")
+  if s:uname =~ "Darwin"
+    set clipboard=unnamed
+  else
+    set clipboard=unnamedplus
+  endif
+endif
 set hlsearch
 " Press Space to turn off highlighting and clear any message already
 " displayed.
@@ -49,18 +60,6 @@ autocmd BufWinEnter * call matchadd('ExtraWhitespace', '\s\+$', -1)
 autocmd BufWinEnter * call matchadd('Tabs', '\t\+', -1)
 
 highlight ColorColumn ctermbg=233 guibg=#212121
-set colorcolumn=81,101,121
 
-set guifont=Source\ Code\ Pro\ 10
+colorscheme railscasts
 
-set sw=2 ts=2 expandtab
-set nowrap
-
-if has("unix")
-  let s:uname = system("uname -s")
-  if s:uname =~ "Darwin"
-    set clipboard=unnamed
-  else
-    set clipboard=unnamedplus
-  endif
-endif
