@@ -1,3 +1,24 @@
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'FelikZ/ctrlp-py-matcher'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'digitaltoad/vim-jade'
+Plugin 'fatih/vim-go'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'slim-template/vim-slim'
+Plugin 'tikhomirov/vim-glsl'
+Plugin 'tpope/vim-fugitive'
+Plugin 'wavded/vim-stylus'
+Plugin 'Valloric/YouCompleteMe'
+
+call vundle#end()
+
 syntax on
 filetype plugin indent on
 
@@ -42,5 +63,3 @@ if has("unix")
     set clipboard=unnamedplus
   endif
 endif
-
-call pathogen#infect()

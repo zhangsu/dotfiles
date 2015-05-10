@@ -1,38 +1,7 @@
-[submodule "vim/bundle/vim-coffee-script"]
-	path = vim/bundle/vim-coffee-script
-	url = git@github.com:kchmck/vim-coffee-script.git
-	branch = master
-[submodule "vim/bundle/vim-slim"]
-	path = vim/bundle/vim-slim
-	url = git@github.com:slim-template/vim-slim.git
-	branch = master
-[submodule "vim/bundle/vim-jade"]
-	path = vim/bundle/vim-jade
-	url = git@github.com:digitaltoad/vim-jade.git
-	branch = master
-[submodule "vim/bundle/greplace.vim"]
-	path = vim/bundle/greplace.vim
-	url = git@github.com:vim-scripts/greplace.vim.git
-	branch = master
 [submodule "rbenv"]
 	path = rbenv
 	url = git@github.com:sstephenson/rbenv.git
 	branch = master
-[submodule "vim/bundle/vim-stylus"]
-	path = vim/bundle/vim-stylus
-	url = git@github.com:wavded/vim-stylus.git
-[submodule "vim/bundle/vim-glsl"]
-	path = vim/bundle/vim-glsl
-	url = git@github.com:tikhomirov/vim-glsl.git
-[submodule "vim/bundle/vim-go"]
-	path = vim/bundle/vim-go
-	url = git@github.com:fatih/vim-go
-[submodule "vim/bundle/YouCompleteMe"]
-	path = vim/bundle/YouCompleteMe
-	url = git@github.com:Valloric/YouCompleteMe.git
-[submodule "vim/bundle/ctrlp.vim"]
-	path = vim/bundle/ctrlp.vim
-	url = git@github.com:ctrlpvim/ctrlp.vim.git
-[submodule "vim/bundle/ctrlp-py-matcher"]
-	path = vim/bundle/ctrlp-py-matcher
-	url = git@github.com:FelikZ/ctrlp-py-matcher.git
+[submodule "vim/bundle/Vundle.vim"]
+	path = vim/bundle/Vundle.vim
+	url = git@github.com:VundleVim/Vundle.vim.git
