@@ -15,6 +15,7 @@ Plugin 'slim-template/vim-slim'
 Plugin 'tikhomirov/vim-glsl'
 Plugin 'tpope/vim-fugitive'
 Plugin 'wavded/vim-stylus'
+Plugin 'Valloric/MatchTagAlways'
 Plugin 'Valloric/YouCompleteMe'
 
 call vundle#end()
