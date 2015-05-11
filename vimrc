@@ -23,7 +23,6 @@ call vundle#end()
 syntax on
 filetype plugin indent on
 
-set t_Co=256
 let g:ycm_confirm_extra_conf = 0
 let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
       \ --ignore .git
@@ -35,6 +34,7 @@ let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
       \ -g ""'
 let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
 
+set t_Co=256
 set colorcolumn=81,101,121
 set guifont=Source\ Code\ Pro\ 10
 set sw=2 ts=2 expandtab
