@@ -10,6 +10,7 @@ Plugin 'FelikZ/ctrlp-py-matcher'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'fatih/vim-go'
+Plugin 'jpo/vim-railscasts-theme'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'slim-template/vim-slim'
 Plugin 'tikhomirov/vim-glsl'
@@ -62,4 +63,3 @@ autocmd BufWinEnter * call matchadd('Tabs', '\t\+', -1)
 highlight ColorColumn ctermbg=233 guibg=#212121
 
 colorscheme railscasts
-
