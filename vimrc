@@ -63,3 +63,5 @@ autocmd BufWinEnter * call matchadd('Tabs', '\t\+', -1)
 highlight ColorColumn ctermbg=233 guibg=#212121
 
 colorscheme railscasts
+
+source $VIMRUNTIME/macros/matchit.vim
