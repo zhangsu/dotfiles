@@ -8,6 +8,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'FelikZ/ctrlp-py-matcher'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'dart-lang/dart-vim-plugin'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'fatih/vim-go'
 Plugin 'jpo/vim-railscasts-theme'
