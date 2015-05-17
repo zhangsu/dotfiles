@@ -45,7 +45,7 @@ if [ -f ~/.git/completion.bash ]; then
 fi
 
 export EDITOR=/usr/bin/vim
-export VISUAL=/usr/bin/vim
+export VISUAL="$EDITOR"
 export PATH=$PATH:/usr/local/heroku/bin
 export PATH=$HOME/.rbenv/bin:$PATH
 eval "$(rbenv init - --no-rehash)"
