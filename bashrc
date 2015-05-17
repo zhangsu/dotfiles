@@ -46,6 +46,7 @@ fi
 
 export EDITOR=/usr/bin/vim
 export VISUAL="$EDITOR"
+export TERM=screen-256color
 export PATH=$PATH:/usr/local/heroku/bin
 export PATH=$HOME/.rbenv/bin:$PATH
 eval "$(rbenv init - --no-rehash)"
