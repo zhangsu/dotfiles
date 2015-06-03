@@ -41,6 +41,7 @@ set colorcolumn=81,101,121
 set guifont=Source\ Code\ Pro\ 10
 set sw=2 ts=2 expandtab
 set nowrap
+set backspace=indent,eol,start
 if has("unix")
   let s:uname = system("uname -s")
   if s:uname =~ "Darwin"
