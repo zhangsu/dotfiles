@@ -12,7 +12,7 @@ if [ -f ~/.git/completion.bash ]; then
     . ~/.git/completion.bash
 fi
 
-export EDITOR=/usr/bin/vim
+export EDITOR=$(which vim)
 export VISUAL="$EDITOR"
 export TERM=screen-256color
 export PATH=$PATH:/usr/local/heroku/bin
