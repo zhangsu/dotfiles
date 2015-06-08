@@ -6,10 +6,11 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-# Auto completion for Git command aliases.
-. ~/.git/git-completion.bash
 if [ -f ~/.git/completion.bash ]; then
     . ~/.git/completion.bash
+fi
+if [ -f ~/.bash/git-completion.bash ]; then
+. ~/.bash/git-completion.bash
 fi
 
 export EDITOR=$(which vim)
