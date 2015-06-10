@@ -1,7 +1,7 @@
 require 'rake'
 require 'erb'
 
-task :default => [:install]
+task :default => [:install, :install_vim_plugins]
 
 desc "install the dot files into user's home directory"
 task :install do
@@ -33,6 +33,11 @@ task :install do
       install_file pathname, filename
     end
   end
+end
+
+desc "install Vim plugins through Vundle"
+task :install_vim_plugins do
+  sh 'vim +PluginInstall +qall'
 end
 
 desc "install ruby-build plugin for rbenv"
