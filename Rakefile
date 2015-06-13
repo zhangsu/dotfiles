@@ -40,6 +40,12 @@ task :install_vim_plugins do
   sh 'vim +PluginInstall +qall'
 end
 
+desc "install Oh My Zsh"
+task :install_oh_my_zsh do
+  path = 'https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh'
+  sh %<sh -c "$(curl -fsSL #{path})">
+end
+
 desc "install ruby-build plugin for rbenv"
 task :install_ruby_build do
   `git clone git@github.com:sstephenson/ruby-build rbenv/plugins/ruby-build`
