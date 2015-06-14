@@ -14,3 +14,7 @@ export TERM=screen-256color
 export PATH=$PATH:/usr/local/heroku/bin
 export PATH=$HOME/.rbenv/bin:$PATH
 eval "$(rbenv init - --no-rehash)"
+
+source ~/.bash/aliases
+
+fpath=(~/.zsh $fpath)
