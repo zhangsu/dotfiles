@@ -1,12 +1,14 @@
 export ZSH=~/.oh-my-zsh
 
-ZSH_THEME="robbyrussell"
+ZSH_THEME="random"
 
-plugins=(git)
+plugins=(vi-mode git)
 
 # User configuration
 
 source $ZSH/oh-my-zsh.sh
+
+bindkey '^r' history-incremental-search-backward
 
 export EDITOR=$(command -v vim)
 export VISUAL="$EDITOR"
