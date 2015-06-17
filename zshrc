@@ -2,7 +2,7 @@ export ZSH=~/.oh-my-zsh
 
 ZSH_THEME="random"
 
-plugins=(vi-mode git)
+plugins=(vi-mode git gitfast)
 
 # User configuration
 
@@ -17,5 +17,3 @@ export PATH=$HOME/.rbenv/bin:$PATH
 eval "$(rbenv init - --no-rehash)"
 
 source ~/.bash/aliases
-
-fpath=(~/.zsh $fpath)
