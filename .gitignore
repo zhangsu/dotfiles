@@ -1,4 +1,5 @@
 vim/.netrwhist
+vim/cache/
 vim/bundle/*
 !vim/bundle/Vundle.vim
 irssi/*.pem
