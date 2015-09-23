@@ -55,15 +55,18 @@ set hlsearch
 " displayed.
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
-highlight ExtraWhitespace ctermbg=Red guibg=Red
-highlight Tabs ctermbg=Blue guibg=Blue
+source $VIMRUNTIME/macros/matchit.vim
+
+" These needs to be before the colorscheme so they get picked up.
 highlight Pmenu ctermfg=Black ctermbg=White guifg=#000 guibg=#fff
-
-autocmd BufWinEnter * call matchadd('ExtraWhitespace', '\s\+$', -1)
-autocmd BufWinEnter * call matchadd('Tabs', '\t\+', -1)
-
 highlight ColorColumn ctermbg=233 guibg=#212121
 
 colorscheme railscasts
 
-source $VIMRUNTIME/macros/matchit.vim
+" These needs to be after the colorscheme to prevent them from being
+" overriden.
+highlight ExtraWhitespace ctermbg=Red guibg=Red
+highlight Tabs ctermbg=Blue guibg=Blue
+
+autocmd BufWinEnter * call matchadd('ExtraWhitespace', '\s\+$', -1)
+autocmd BufWinEnter * call matchadd('Tabs', '\t\+', -1)
