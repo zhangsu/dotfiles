@@ -68,5 +68,5 @@ colorscheme railscasts
 highlight ExtraWhitespace ctermbg=Red guibg=Red
 highlight Tabs ctermbg=Blue guibg=Blue
 
-autocmd BufWinEnter * call matchadd('ExtraWhitespace', '\s\+$', -1)
-autocmd BufWinEnter * call matchadd('Tabs', '\t\+', -1)
+autocmd WinEnter,BufWinEnter * call matchadd('ExtraWhitespace', '\s\+$', -1)
+autocmd WinEnter,BufWinEnter * call matchadd('Tabs', '\t\+', -1)
