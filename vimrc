@@ -59,7 +59,7 @@ nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 source $VIMRUNTIME/macros/matchit.vim
 
 " These needs to be before the colorscheme so they get picked up.
-highlight Pmenu ctermfg=Black ctermbg=White guifg=#000 guibg=#fff
+highlight Pmenu ctermfg=Black ctermbg=White guifg=#000000 guibg=#ffffff
 highlight ColorColumn ctermbg=233 guibg=#212121
 
 colorscheme railscasts
