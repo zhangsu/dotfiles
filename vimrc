@@ -7,6 +7,8 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'FelikZ/ctrlp-py-matcher'
+Plugin 'Valloric/MatchTagAlways'
+Plugin 'Valloric/YouCompleteMe'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'dart-lang/dart-vim-plugin'
 Plugin 'digitaltoad/vim-jade'
@@ -18,8 +20,6 @@ Plugin 'slim-template/vim-slim'
 Plugin 'tikhomirov/vim-glsl'
 Plugin 'tpope/vim-fugitive'
 Plugin 'wavded/vim-stylus'
-Plugin 'Valloric/MatchTagAlways'
-Plugin 'Valloric/YouCompleteMe'
 
 call vundle#end()
 
