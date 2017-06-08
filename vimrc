@@ -13,6 +13,7 @@ Plugin 'digitaltoad/vim-jade'
 Plugin 'fatih/vim-go'
 Plugin 'jpo/vim-railscasts-theme'
 Plugin 'kchmck/vim-coffee-script'
+Plugin 'pangloss/vim-javascript'
 Plugin 'slim-template/vim-slim'
 Plugin 'tikhomirov/vim-glsl'
 Plugin 'tpope/vim-fugitive'
@@ -36,6 +37,7 @@ let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
       \ --ignore review
       \ -g ""'
 let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
+let g:javascript_plugin_jsdoc = 1
 
 set t_Co=256
 set colorcolumn=81,101,121
