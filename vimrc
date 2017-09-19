@@ -49,7 +49,9 @@ set backspace=indent,eol,start
 if has("unix")
   let s:uname = system("uname -s")
   if s:uname =~ "Darwin"
-    set clipboard=unnamed
+    if $TMUX == ''
+      set clipboard=unnamed
+    end
   else
     set clipboard=unnamedplus
   endif
