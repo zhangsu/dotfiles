@@ -40,6 +40,7 @@ let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
 let g:ctrlp_working_path_mode = 'a'
 let g:javascript_plugin_jsdoc = 1
 
+set visualbell
 set t_Co=256
 set colorcolumn=81,101,121
 set guifont=Source\ Code\ Pro\ 10
