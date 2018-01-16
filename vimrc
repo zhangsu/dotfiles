@@ -45,6 +45,7 @@ set t_Co=256
 set colorcolumn=81,101,121
 set guifont=Source\ Code\ Pro\ 10
 set sw=2 ts=2 expandtab
+set textwidth=0 wrapmargin=0
 set nowrap
 set backspace=indent,eol,start
 if has("unix")
