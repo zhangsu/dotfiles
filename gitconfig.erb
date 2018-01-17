@@ -12,8 +12,10 @@
     renameLimit = 2048
 [pager]
     log = diff-so-fancy | less
-    show = diff-so-fancy | less
-    diff = diff-so-fancy | less
+    branch = diff-so-fancy | less --tabs=4 -RFX
+    status = diff-so-fancy | less --tabs=4 -RFX
+    show = diff-so-fancy | less --tabs=4
+    diff = diff-so-fancy | less  --tabs=4
 [push]
     default = upstream
 [github]
