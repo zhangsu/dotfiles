@@ -36,7 +36,16 @@ task :install do
 end
 
 desc "install common command-line tools"
-task :install_tools => [:install_diff_so_fancy]
+task :install_tools => [:install_ag, :install_diff_so_fancy]
+
+desc "install the Silver Searcher (ag)"
+task :install_ag do
+  sh <<~END
+    if [ -x "$(command -v apt-get)" ]; then
+      sudo apt-get install silversearcher-ag
+    fi
+  END
+end
 
 desc "install diff-so-fancy"
 task :install_diff_so_fancy do
