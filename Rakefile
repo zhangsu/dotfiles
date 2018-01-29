@@ -44,7 +44,7 @@ task :install_diff_so_fancy do
     if [ -x "$(command -v npm)" ]; then
       sudo npm install -g diff-so-fancy
     else
-      echo 'WARNING: manually install NPM first before installing diff-so-fancy!'
+      echo WARNING: manually install NPM first before installing diff-so-fancy!
     fi
   END
 end
