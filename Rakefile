@@ -1,7 +1,7 @@
 require 'rake'
 require 'erb'
 
-task :default => [:install, :install_vim_plugins]
+task :default => [:install, :install_tools, :install_vim_plugins]
 
 desc "install the dot files into user's home directory"
 task :install do
@@ -33,6 +33,20 @@ task :install do
       install_file pathname, filename
     end
   end
+end
+
+desc "install common command-line tools"
+task :install_tools => [:install_diff_so_fancy]
+
+desc "install diff-so-fancy"
+task :install_diff_so_fancy do
+  sh <<~END
+    if [ -x "$(command -v npm)" ]; then
+      sudo npm install -g diff-so-fancy
+    else
+      echo 'WARNING: manually install NPM first before installing diff-so-fancy!'
+    fi
+  END
 end
 
 desc "install Vim plugins through Vundle"
