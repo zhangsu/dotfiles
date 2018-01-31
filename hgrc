@@ -1,0 +1,4 @@
+[color]
+desc.here = bold
+[pager]
+pager = diff-so-fancy | less --tabs=4
