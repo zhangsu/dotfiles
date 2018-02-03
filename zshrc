@@ -2,7 +2,7 @@ export ZSH=~/.oh-my-zsh
 
 ZSH_THEME="random"
 
-plugins=(vi-mode git gitfast)
+plugins=(vi-mode git gitfast extract)
 
 # User configuration
 
