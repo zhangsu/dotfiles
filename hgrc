@@ -1,3 +1,5 @@
+[ui]
+merge = internal:merge
 [color]
 desc.here = bold
 [pager]
