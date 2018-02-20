@@ -42,6 +42,7 @@ let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
 let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
 let g:ctrlp_working_path_mode = 'a'
 let g:javascript_plugin_jsdoc = 1
+nnoremap <silent> <C-O> :FZF<CR>
 
 set visualbell
 set t_Co=256
