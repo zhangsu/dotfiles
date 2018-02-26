@@ -22,6 +22,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'slim-template/vim-slim'
 Plugin 'tikhomirov/vim-glsl'
 Plugin 'tpope/vim-fugitive'
+Plugin 'vim-syntastic/syntastic'
 Plugin 'wavded/vim-stylus'
 
 call vundle#end()
@@ -30,6 +31,7 @@ syntax on
 filetype plugin indent on
 
 let g:ycm_confirm_extra_conf = 0
+
 let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
       \ --ignore .git
       \ --ignore .svn
@@ -41,8 +43,19 @@ let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
       \ -g ""'
 let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
 let g:ctrlp_working_path_mode = 'a'
+
 let g:javascript_plugin_jsdoc = 1
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
 nnoremap <silent> <C-O> :FZF<CR>
+
 
 set visualbell
 set t_Co=256
