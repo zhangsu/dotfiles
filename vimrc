@@ -30,6 +30,8 @@ call vundle#end()
 syntax on
 filetype plugin indent on
 
+set formatoptions-=t
+
 let g:ycm_confirm_extra_conf = 0
 
 let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
@@ -53,13 +55,12 @@ let g:syntastic_check_on_wq = 0
 
 nnoremap <silent> <C-O> :FZF<CR>
 
-
 set visualbell
 set t_Co=256
 set colorcolumn=81,101,121
 set guifont=Source\ Code\ Pro\ 10
-set sw=2 ts=2 expandtab
 set textwidth=0 wrapmargin=0
+set sw=2 ts=2 expandtab
 set nowrap
 set backspace=indent,eol,start
 if has("unix")
