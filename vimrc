@@ -63,6 +63,7 @@ set textwidth=0 wrapmargin=0
 set sw=2 ts=2 expandtab
 set nowrap
 set backspace=indent,eol,start
+set encoding=utf-8
 if has("unix")
   let s:uname = system("uname -s")
   if s:uname =~ "Darwin"
