@@ -12,6 +12,8 @@ bindkey '^r' history-incremental-search-backward
 
 [[ $TMUX = "" ]] && export TERM="xterm-256color"
 export KEYTIMEOUT=1
+export LANGUAGE="en_US.UTF-8"
+export LC_ALL="en_US.UTF-8"
 export EDITOR=$(command -v vim)
 export VISUAL="$EDITOR"
 export PATH=$PATH:/usr/local/heroku/bin
