@@ -1,7 +1,7 @@
 require 'rake'
 require 'erb'
 
-task :default => [:install, :install_tools, :install_vim_plugins]
+task :default => [:install, :install_tools]
 
 desc "install the dot files into user's home directory"
 task :install do
@@ -36,7 +36,7 @@ task :install do
 end
 
 desc "install common command-line tools"
-task :install_tools => [:install_tmux, :install_ag, :install_diff_so_fancy]
+task :install_tools => [:install_tmux, :install_macvim, :install_diff_so_fancy]
 
 desc "install Homebrew"
 task :install_homebrew do
@@ -61,6 +61,15 @@ task :install_tmux => [:install_homebrew] do
   sh <<~END
     if [ -x "$(command -v brew)" ]; then
       brew install tmux
+    fi
+  END
+end
+
+desc "install macvim"
+task :install_macvim => [:install_homebrew, :install_ag] do
+  sh <<~END
+    if [ -x "$(command -v brew)" ]; then
+      brew install macvim
     fi
   END
 end

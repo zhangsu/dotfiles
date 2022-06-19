@@ -14,7 +14,11 @@ Foo.
    git submodule update --init --recursive --remote
    rake
    rake install_oh_my_zsh  # this also changes the shell
+   exec zsh
+   rake install_vim_plugins
    ```
+
+3. Install [YouCompleteMe](https://github.com/ycm-core/YouCompleteMe#installation)
 
 ## Update submodules
 
