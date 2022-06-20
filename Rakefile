@@ -36,7 +36,7 @@ task :install do
 end
 
 desc "install common command-line tools"
-task :install_tools => [:install_ag, :install_diff_so_fancy]
+task :install_tools => [:install_tmux, :install_ag, :install_diff_so_fancy]
 
 desc "install Homebrew"
 task :install_homebrew do
@@ -52,6 +52,15 @@ task :install_npm do
   sh <<~END
     if [ -x "$(command -v nvm)" ]; then
       nvm install --lts
+    fi
+  END
+end
+
+desc "install tmux"
+task :install_tmux => [:install_homebrew] do
+  sh <<~END
+    if [ -x "$(command -v brew)" ]; then
+      brew install tmux
     fi
   END
 end
