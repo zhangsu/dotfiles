@@ -41,7 +41,7 @@ task :install_tools => [:install_ag, :install_diff_so_fancy]
 desc "install Homebrew"
 task :install_homebrew do
   sh <<~END
-    if [ `uname` == "Darwin" ]; then
+    if [ `uname` == "Darwin" ] && ! [ -x "$(command -v brew)" ]; then
       /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     fi
   END
