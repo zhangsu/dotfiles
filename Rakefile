@@ -38,6 +38,15 @@ end
 desc "install common command-line tools"
 task :install_tools => [:install_ag, :install_diff_so_fancy]
 
+desc "install Homebrew"
+task :install_homebrew do
+  sh <<~END
+    if [ `uname` == "Darwin" ]; then
+      /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    fi
+  END
+end
+
 desc "install NPM using NVM"
 task :install_npm do
   sh <<~END
@@ -48,10 +57,12 @@ task :install_npm do
 end
 
 desc "install the Silver Searcher (ag)"
-task :install_ag do
+task :install_ag => [:install_homebrew] do
   sh <<~END
     if [ -x "$(command -v apt-get)" ]; then
       sudo apt-get install silversearcher-ag
+    elif [ -x "$(command -v brew)" ]; then
+      brew install the_silver_searcher
     fi
   END
 end
