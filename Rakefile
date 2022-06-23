@@ -38,6 +38,15 @@ end
 desc "install common command-line tools"
 task :install_tools => [:install_ag, :install_diff_so_fancy]
 
+desc "install NPM using NVM"
+task :install_npm do
+  sh <<~END
+    if [ -x "$(command -v nvm)" ]; then
+      nvm install --lts
+    fi
+  END
+end
+
 desc "install the Silver Searcher (ag)"
 task :install_ag do
   sh <<~END
@@ -48,10 +57,10 @@ task :install_ag do
 end
 
 desc "install diff-so-fancy"
-task :install_diff_so_fancy do
+task :install_diff_so_fancy => [:install_npm] do
   sh <<~END
     if [ -x "$(command -v npm)" ]; then
-      sudo npm install -g diff-so-fancy
+      npm install -g diff-so-fancy
     else
       echo WARNING: manually install NPM first before installing diff-so-fancy!
     fi
